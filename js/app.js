@@ -58,7 +58,7 @@ if(CONSULTATION_BUTTON.length > 0){
 
   CONSULTATION_BUTTON.forEach(consultationItem =>{
     consultationItem.addEventListener('click', ()=>{
-      MODAL_WRAPPER.classList.add('active');
+      MODAL_WRAPPER.classList.toggle('active');
     });
 });
 
@@ -100,5 +100,41 @@ CONSULTATUON_BUTTON.addEventListener('click', ()=>{
 
     if(regName.test(CONSULTATUON_NAME.value) && regTell.test(CONSULTATUON_TELL.value)){
       MODAL_WRAPPER.classList.remove('active');
+
+//--------------------------//DATA FOR BACKEND//-----------------------------//
+//FETCH // AJAX
+
+      console.log(CONSULTATUON_NAME.value);
+      console.log(CONSULTATUON_TELL.value);
+
     }
+});
+
+//SELECT
+
+const SELECT = document.querySelectorAll('.about__select');
+
+if(SELECT.length>0){
+  SELECT.forEach(someSelect=>{
+    someSelect.addEventListener('click', ()=>{
+      someSelect.nextElementSibling.classList.toggle('active');
+    })
+  })
+}
+
+
+window.addEventListener('click', function(e){
+    if(e.target.classList.contains('about__option-item')){
+      let currentSelectWrapper = e.target.parentElement.previousElementSibling;
+      let currentSelect = currentSelectWrapper.querySelector('p')
+      currentSelect.innerHTML = e.target.innerText;
+      currentSelect.classList.add('valid');
+      e.target.parentElement.classList.remove('active'); 
+    }
+})
+
+const POST_SELECT = document.querySelector('#btnSelect');
+
+POST_SELECT.addEventListener('click', ()=>{
+    console.log('++');
 })

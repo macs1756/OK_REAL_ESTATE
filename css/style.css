@@ -634,10 +634,12 @@ header {
 .initial__p-upper {
   text-transform: uppercase;
   margin-bottom: 10px;
+  max-width: 420px;
 }
 
 .initial__p-lower {
   margin-bottom: 10px;
+  max-width: 670px;
 }
 
 footer {
@@ -646,7 +648,6 @@ footer {
 
 .about {
   margin-top: 150px;
-  display: none;
 }
 
 .about h2 {

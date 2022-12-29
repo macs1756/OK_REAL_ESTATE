@@ -1022,9 +1022,9 @@ header {
   display: block;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-30%, -40%);
-      -ms-transform: translate(-30%, -40%);
-          transform: translate(-30%, -40%);
+  -webkit-transform: translate(-50%, -40%);
+      -ms-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
 }
 
 .product__slider-next {
@@ -1743,6 +1743,11 @@ footer {
 
   .product__arrow:hover {
     background: rgba(253, 208, 76, 0.7);
+  }
+
+  .product__slider-next.swiper-button-disabled .product__arrow:hover,
+  .product__slider-prev.swiper-button-disabled .product__arrow:hover {
+    background: rgba(29, 31, 36, 0.05);
   }
 
   .about__option-item:hover {

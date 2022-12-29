@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221228181916" />
-	<link rel="stylesheet" href="css/style.css?_v=20221228181916">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221229173437" />
+	<link rel="stylesheet" href="css/style.css?_v=20221229173437">
 </head>
 
 <body>
@@ -22,9 +22,10 @@
 		
 		<nav class="header__nav d-flex a-i-center j-c-space">
 
+			<div class="header__burger"><span></span></div>
 			<picture><source srcset="img/header__logo.webp" type="image/webp"><img src="img/header__logo.png" alt="header-logo"></picture>
 
-			<ul class="d-flex a-i-start">
+			<ul class="a-i-start">
 				<li><a href="index.html">ГОЛОВНА</a></li>
 				<li><a href="index.html">О КОМПАНІЇ</a></li>
 				<li><a href="index.html">НАША КОМАНДА</a></li>
@@ -35,11 +36,18 @@
 			</ul>
 
 			<button class="header__btn btn consultation">Замовити консультацію</button>
-			<div class="header__burger"><span>burger</span></div>
+		
 
 		</nav>	
 
-
+		<ul class="burger__body">
+			<li><a href="index.html">ГОЛОВНА</a></li>
+				<li><a href="index.html">О КОМПАНІЇ</a></li>
+				<li><a href="index.html">НАША КОМАНДА</a></li>
+				<li><a href="index.html">ВІДГУКИ</a></li>
+				<li><a href="index.html">НАШІ КЛІЄНТИ</a></li>
+				<li><a href="index.html">КОНТАКТИ</a></li>
+		</ul>
 	
 		</div>
 	
@@ -56,9 +64,9 @@
 <section class="initial">
 	<picture><source srcset="img/home-initial-bg.webp" type="image/webp"><img src="img/home-initial-bg.png" alt="bg"></picture>
 	<div class="initial__gradient"></div>
-	<div class="initial__body d-flex a-i-center j-c-center flex-column">
+	<div class="initial__body d-flex flex-column content">
 		<h1>Агенція нерухомості OK Real Estate</h1>
-		<p class="initial__p-upper">БАЖАЄТЕ БЕЗКОШТОВНУ КОНСУЛЬТАЦІЮ?</p>
+		<p class="initial__p-upper w100">БАЖАЄТЕ БЕЗКОШТОВНУ КОНСУЛЬТАЦІЮ?</p>
 		<p class="initial__p-lower">Заповніть форму та отримайте безкоштовну консультацію стосовно Вашого питання</p>
 	</div>
 	
@@ -81,7 +89,7 @@
 				</div>
 
 				<div class="about__option-wrapper">
-					<div class="about__option-item">item1</div>
+					<div class="about__option-item">Дніп</div>
 					<div class="about__option-item">item2</div>
 					<div class="about__option-item">item3</div>
 					<div class="about__option-item">item4</div>
@@ -106,7 +114,7 @@
 				</div>
 				
 				<div class="about__option-wrapper">
-					<div class="about__option-item">item1</div>
+					<div class="about__option-item">Двохкымнатна rdfhnbhf</div>
 					<div class="about__option-item">item2</div>
 					<div class="about__option-item">item3</div>
 					<div class="about__option-item">item4</div>
@@ -144,9 +152,9 @@
 			</section>
 
 
-			<sectio class="about__section">
+			<section class="about__section">
 				<button id="btnSelect" class="btn select__btn">Відправити</button>
-			</sectio>
+			</section>
 		
 
 		</div>
@@ -169,24 +177,18 @@
 						<div class="swiper-wrapper">
 							<!-- Slides -->
 							<div class="swiper-slide">
-								<picture><source srcset="img/1.webp" type="image/webp"><img src="img/1.png" alt=""></picture>
+								<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt="slide"></picture>
 							</div>
 
 							<div class="swiper-slide">
-								<picture><source srcset="img/2.webp" type="image/webp"><img src="img/2.png" alt=""></picture>
+								<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt="slide"></picture>
 							</div>
 
 							<div class="swiper-slide">
-								<picture><source srcset="img/3.webp" type="image/webp"><img src="img/3.png" alt=""></picture>
+								<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt="slide"></picture>
 							</div>
 
-							<div class="swiper-slide">
-								<picture><source srcset="img/4.webp" type="image/webp"><img src="img/4.png" alt=""></picture>
-							</div>
-
-							<div class="swiper-slide">
-								<picture><source srcset="img/5.webp" type="image/webp"><img src="img/5.png" alt=""></picture>
-							</div>
+							
 
 						</div>
 
@@ -202,35 +204,114 @@
 						<div class="swiper-wrapper">
 							<!-- Slides -->
 							<div class="swiper-slide">
-								<picture><source srcset="img/1.webp" type="image/webp"><img src="img/1.png" alt=""></picture>
+								<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt="slide"></picture>
 							</div>
 
 							<div class="swiper-slide">
-								<picture><source srcset="img/2.webp" type="image/webp"><img src="img/2.png" alt=""></picture>
+								<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt="slide"></picture>
 							</div>
 
 							<div class="swiper-slide">
-								<picture><source srcset="img/3.webp" type="image/webp"><img src="img/3.png" alt=""></picture>
+								<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt="slide"></picture>
 							</div>
 
-							<div class="swiper-slide">
-								<picture><source srcset="img/4.webp" type="image/webp"><img src="img/4.png" alt=""></picture>
-							</div>
-
-							<div class="swiper-slide">
-								<picture><source srcset="img/5.webp" type="image/webp"><img src="img/5.png" alt=""></picture>
-							</div>
+							
 
 						</div>
 
 					</div>
 
-
-
-
-
-
 				</div>
+			</div>
+		</div>
+		<div class="about__despription">
+
+			
+			<div class="about__selling">
+				<div class="about__selling-body">
+					<h3 class="cen">ПРОДАЖ</h3>
+			
+				<div class="despription__wr">
+					<div class="despription-item d-flex a-i-center">	
+						<div class="despription__item-curcle d-flex a-i-center j-c-center">		
+							<img src="img/check.svg" alt="check">		
+						</div>
+						<p>Будинків</p>
+					</div>
+
+					<div class="despription-item d-flex a-i-center">	
+						<div class="despription__item-curcle d-flex a-i-center j-c-center">		
+							<img src="img/check.svg" alt="check">		
+						</div>
+						<p>Квартир</p>
+					</div>
+
+					<div class="despription-item d-flex a-i-center">	
+						<div class="despription__item-curcle d-flex a-i-center j-c-center">		
+							<img src="img/check.svg" alt="check">		
+						</div>
+						<p>Земельних ділянок</p>
+					</div>
+
+					<div class="despription-item d-flex a-i-center">	
+						<div class="despription__item-curcle d-flex a-i-center j-c-center">		
+							<img src="img/check.svg" alt="check">		
+						</div>
+						<p>Торгових площ</p>
+					</div>
+
+					<div class="despription-item d-flex a-i-center">	
+						<div class="despription__item-curcle d-flex a-i-center j-c-center">		
+							<img src="img/check.svg" alt="check">		
+						</div>
+						<p>Офісів</p>
+					</div>
+
+					<div class="despription-item d-flex a-i-center">	
+						<div class="despription__item-curcle d-flex a-i-center j-c-center">		
+							<img src="img/check.svg" alt="check">		
+						</div>
+						<p>Земельних ділянок комерційного призначення</p>
+					</div>
+				</div>
+			</div>
+				
+				<picture><source srcset="img/rent.webp" type="image/webp"><img class='despription__bg' src="img/rent.png" alt="bg"></picture>
+			</div>
+
+
+			<div class="about__rent">
+				<div class="about__selling-body">
+					<div class="about__selling-body">
+						<h3 class="cen">ПРОДАЖ</h3>
+						<div class="despription__wr">
+							<div class="despription-item d-flex a-i-center">	
+								<div class="despription__item-curcle d-flex a-i-center j-c-center">		
+									<img src="img/check.svg" alt="check">		
+								</div>
+								<p>Торгових площ</p>
+							</div>
+							
+							<div class="despription-item d-flex a-i-center">	
+								<div class="despription__item-curcle d-flex a-i-center j-c-center">		
+									<img src="img/check.svg" alt="check">		
+								</div>
+								<p>Офісів</p>
+							</div>
+							
+							<div class="despription-item d-flex a-i-center">	
+								<div class="despription__item-curcle d-flex a-i-center j-c-center">		
+									<img src="img/check.svg" alt="check">		
+								</div>
+								<p>Промислових приміщень</p>
+							</div>
+
+						</div>
+					</div>
+					
+				</div>
+				
+				<picture><source srcset="img/selling.webp" type="image/webp"><img class='despription__bg' src="img/selling.png" alt="bg"></picture>
 			</div>
 		</div>
 	</div>
@@ -265,8 +346,9 @@
 		</div>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221228181916"></script>
-	<script src="js/app.js?_v=20221228181916"></script>
+	<script src="js/header.js?_v=20221229173437"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221229173437"></script>
+	<script src="js/app.js?_v=20221229173437"></script>
 </body>
 
 </html>

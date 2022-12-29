@@ -39,15 +39,7 @@ const aboutSwiper = new Swiper(".about-swiper", {
   }
 });
 
-let HEADER = document.querySelector('header');
 
-window.addEventListener('scroll', ()=>{
-  if(scrollY > 30){
-    HEADER.classList.add('scroll');
-  }else{
-    HEADER.classList.remove('scroll');
-  };
-});
 
 let CONSULTATION_BUTTON = document.querySelectorAll('.consultation');
 let MODAL_WRAPPER = document.querySelector('.consultation__wr');

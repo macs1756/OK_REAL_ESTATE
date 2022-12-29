@@ -129,4 +129,49 @@ const POST_SELECT = document.querySelector('#btnSelect');
 
 POST_SELECT.addEventListener('click', ()=>{
     console.log('++');
-})
+    ///POST SELECT DATE
+});
+
+
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+});
+
+
+const productSwiper = new Swiper(".product__slider", {
+ 
+
+  spaceBetween: 38,
+ 
+   navigation: {
+     nextEl: ".product__slider-next",
+     prevEl: ".product__slider-prev",
+   },
+  breakpoints: {
+
+      767:{
+        slidesPerView: 2
+      },
+      992:{
+        slidesPerView: 3
+      },
+
+      1300:{
+        slidesPerView: 4
+      }
+  }
+  
+});

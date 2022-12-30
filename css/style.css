@@ -385,7 +385,6 @@ h2 {
   letter-spacing: 0.015em;
   color: rgba(0, 0, 0, 0.76);
   padding: 8px 16px;
-  max-width: 220px;
   color: #fff;
   white-space: nowrap;
 }
@@ -440,6 +439,13 @@ h2 {
   letter-spacing: 0.015em;
   color: #1D1F24;
   padding: 8px 16px;
+}
+
+.consultation {
+  color: rgba(0, 0, 0, 0.76);
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .burger__body {
@@ -513,13 +519,6 @@ header {
 
 .header__nav img {
   display: none;
-}
-
-.header__btn {
-  color: rgba(0, 0, 0, 0.76);
-  -webkit-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
 }
 
 .header__burger {
@@ -1102,10 +1101,13 @@ header {
   padding-bottom: 105px;
 }
 
-.object__all span {
-  font-weight: 500;
+.object__all {
   font-size: 24px;
   line-height: 116%;
+}
+
+.object__all span {
+  font-weight: 500;
   color: #FDD04C;
   margin-right: 8px;
 }
@@ -1146,6 +1148,7 @@ header {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
+  border-radius: 8px;
 }
 
 .command__bg {
@@ -1278,8 +1281,147 @@ header {
           column-gap: 95px;
 }
 
+.review {
+  display: none;
+}
+
+.review h2 {
+  margin-bottom: 75px;
+}
+
+.review__net {
+  margin-bottom: 65px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.333fr 0.333fr 0.333fr;
+  grid-template-columns: 0.333fr 0.333fr 0.333fr;
+}
+
+.review__net-item {
+  padding-top: 16px;
+  height: 100%;
+  padding-bottom: 16px;
+  padding-right: 60px;
+}
+
+.review__net-item h5 {
+  color: #1D1F24;
+  font-weight: 500;
+  margin-bottom: 17px;
+  font-size: 16px;
+}
+
+.review__net-item:not(:last-child) {
+  border-right: 1px solid #FBC21B;
+}
+
+.review__net-item:not(:first-child) {
+  padding-left: 60px;
+}
+
+.review__date {
+  letter-spacing: 0.001em;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  font-family: "Poppins";
+  margin-bottom: 17px;
+  line-height: 140%;
+}
+
+.review__body {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(29, 31, 36, 0.78);
+}
+
 footer {
-  height: 200vh;
+  margin-top: 150px;
+  background: #1D1F24;
+  width: 100%;
+  color: #FFFFFF;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  font-size: 15px;
+  line-height: 120%;
+}
+
+.footer {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.footer__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding-right: 20px;
+}
+
+.footer__logo {
+  margin-bottom: 50px;
+}
+
+.footer__contact {
+  padding-right: 15px;
+}
+
+.footer__contact img {
+  min-width: 24px;
+}
+
+.footer__social-networks {
+  margin-bottom: 50px;
+  gap: 15px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.footer__social-networks-wr {
+  gap: 15px;
+}
+
+.footer__social-tel p {
+  margin-bottom: 20px;
+}
+
+.footer__social-tel a {
+  margin-bottom: 20px;
+  display: block;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.footer__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__consultation {
+  margin-bottom: 90px;
+}
+
+.footer__adress a {
+  display: block;
+  padding: 3px 0;
+}
+
+.footer__map {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .about h2 {
@@ -1605,6 +1747,12 @@ footer {
   }
 }
 
+@media (min-width: 601px) {
+  .review {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   .header__nav ul {
     display: -webkit-box;
@@ -1726,8 +1874,8 @@ footer {
     padding-bottom: calc(25px + 80 * ((100vw - 320px) / 1920));
   }
 
-  .object__all span {
-    font-size: calc(20px + 4 * ((100vw - 320px) / 1920));
+  .object__all {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 1920));
   }
 
   .command {
@@ -1820,6 +1968,26 @@ footer {
             column-gap: calc(30px + 65 * ((100vw - 320px) / 1920));
   }
 
+  .review__net {
+    margin-bottom: calc(15px + 50 * ((100vw - 320px) / 1920));
+  }
+
+  .review__net-item {
+    padding-right: calc(20px + 40 * ((100vw - 320px) / 1920));
+  }
+
+  .review__net-item:not(:first-child) {
+    padding-left: calc(20px + 40 * ((100vw - 320px) / 1920));
+  }
+
+  footer {
+    margin-top: calc(60px + 90 * ((100vw - 320px) / 1920));
+  }
+
+  .footer__consultation {
+    margin-bottom: calc(40px + 50 * ((100vw - 320px) / 1920));
+  }
+
   .about h2 {
     margin-top: calc(40px + 66 * ((100vw - 320px) / 1920));
   }
@@ -1895,6 +2063,45 @@ footer {
 
   .despription-item p {
     font-size: calc(18px + 6 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (max-width: 1500px) {
+  .footer__social-networks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__net {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__social-networks {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .footer__adress {
+    margin-bottom: 20px;
   }
 }
 
@@ -1990,6 +2197,23 @@ footer {
     row-gap: 30px;
   }
 
+  .review__net {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .review__net-item:not(:last-child) {
+    border: none;
+  }
+
+  .review__net-item:not(:first-child) {
+    padding-left: 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+
   .select__btn {
     padding: 8px 6px;
   }
@@ -2039,6 +2263,13 @@ footer {
   .command {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .footer__social-networks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .about__net-text h3 {
@@ -2150,7 +2381,7 @@ footer {
 }
 
 @media (any-hover: hover) {
-  .header__btn:hover {
+  .consultation:hover {
     color: #fff;
   }
 

@@ -6,8 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221230164028" />
-	<link rel="stylesheet" href="css/style.css?_v=20221230164028">
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css?_v=20221230195417" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221230195417" />
+	<link rel="stylesheet" href="css/style.css?_v=20221230195417">
 </head>
 
 <body>
@@ -62,7 +63,7 @@
 		<main>
 			
 <section class="initial">
-	<picture><source srcset="img/home-initial-bg.webp" type="image/webp"><img src="img/home-initial-bg.png" alt="bg"></picture>
+	<picture><source srcset="img/home-initial-bg.webp" type="image/webp"><img class="adaptive-img" src="img/home-initial-bg.png" alt="bg"></picture>
 	<div class="initial__gradient"></div>
 	<div class="initial__body d-flex flex-column content">
 		<h1>Агенція нерухомості OK Real Estate</h1>
@@ -88,7 +89,7 @@
 						<img class="select__arrow" src="img/select__arrow.svg" alt="arrow">
 				</div>
 
-				<div class="about__option-wrapper">
+				<div data-simplebar class="about__option-wrapper opt1">
 					<div class="about__option-item">Дніп</div>
 					<div class="about__option-item">item2</div>
 					<div class="about__option-item">item3</div>
@@ -113,7 +114,7 @@
 						<img class="select__arrow" src="img/select__arrow.svg" alt="arrow">
 				</div>
 				
-				<div class="about__option-wrapper">
+				<div data-simplebar class="about__option-wrapper opt2">
 					<div class="about__option-item">Двохкымнатна rdfhnbhf</div>
 					<div class="about__option-item">item2</div>
 					<div class="about__option-item">item3</div>
@@ -140,7 +141,7 @@
 						<img class="select__arrow" src="img/select__arrow.svg" alt="arrow">
 				</div>
 				
-				<div class="about__option-wrapper">
+				<div data-simplebar class="about__option-wrapper opt3">
 					<div class="about__option-item">item1</div>
 					<div class="about__option-item">item2</div>
 					<div class="about__option-item">item3</div>
@@ -1061,14 +1062,14 @@
 			</div>
 
 			<button id="consultationBtn" class="consultation__post">Відправити</button>
-			
+
 		</div>
 	</div>
-
-	<script src="js/header.js?_v=20221230164028"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221230164028"></script>
-	<script src="js/dynamicAdapt.js?_v=20221230164028"></script>
-	<script src="js/app.js?_v=20221230164028"></script>
+	<script src="js/header.js?_v=20221230195417"></script>
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js?_v=20221230195417"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221230195417"></script>
+	<script src="js/dynamicAdapt.js?_v=20221230195417"></script>
+	<script src="js/app.js?_v=20221230195417"></script>
 </body>
 
 </html>

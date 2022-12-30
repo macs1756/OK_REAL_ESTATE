@@ -448,6 +448,22 @@ h2 {
   transition: all 0.5s linear;
 }
 
+.adaptive-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.simplebar-scrollbar:before {
+  background: rgba(253, 208, 76, 0.54);
+  border-radius: 4px;
+  opacity: 1;
+}
+
 .burger__body {
   position: absolute;
   top: 100%;
@@ -455,7 +471,7 @@ h2 {
   background-color: #fff;
   color: #1D1F24;
   font-weight: 500;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,16 +516,15 @@ header {
   left: 0;
   width: 100%;
   z-index: 500;
-  padding-top: 10px;
+  padding-top: 34px;
   padding-bottom: 10px;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  margin-top: 24px;
 }
 
 .scroll {
-  margin-top: 0;
+  padding-top: 10px;
   background-color: rgba(0, 0, 0, 0.733);
 }
 
@@ -698,17 +713,12 @@ header {
 }
 
 .initial img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   -o-object-position: 0% 0%;
      object-position: 0% 0%;
   -webkit-filter: blur(1px);
           filter: blur(1px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   z-index: 1;
   min-width: 100%;
   min-height: 100%;
@@ -751,7 +761,7 @@ header {
   text-transform: uppercase;
   margin-bottom: 10px;
   max-width: 420px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 115%;
   text-align: center;
   color: rgba(255, 255, 255, 0.83);
@@ -1264,6 +1274,12 @@ header {
   background: #1D1F24;
   padding-top: 50px;
   padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .client__body {
@@ -1611,8 +1627,6 @@ footer {
           box-shadow: 0px 4px 8px rgba(253, 208, 76, 0.13);
   border-radius: 0 0 5px 5px;
   max-height: 210px;
-  overflow-y: auto;
-  overflow-x: hidden;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -1625,7 +1639,15 @@ footer {
   max-width: 100%;
   position: absolute;
   z-index: 3;
-  width: 100%;
+}
+
+.opt1 {
+  width: calc(100% - 16px);
+}
+
+.opt2,
+.opt3 {
+  width: calc(100% - 32px);
 }
 
 .about__option-wrapper.active {
@@ -1641,6 +1663,7 @@ footer {
   padding: 10px 12px;
   border-radius: 5px;
   cursor: pointer;
+  overflow: hidden;
   font-size: 16px;
 }
 
@@ -1810,10 +1833,6 @@ footer {
 
   h2 {
     font-size: calc(22px + 18 * ((100vw - 320px) / 1920));
-  }
-
-  header {
-    margin-top: calc(14px + 10 * ((100vw - 320px) / 1920));
   }
 
   .initial {
@@ -2127,6 +2146,14 @@ footer {
             flex-direction: column;
   }
 
+  .about__option-wrapper {
+    padding-right: 6px;
+  }
+
+  .about__option-item {
+    padding-right: 6px;
+  }
+
   .select__warning,
   .select__arrow {
     display: none;
@@ -2142,6 +2169,10 @@ footer {
 }
 
 @media (max-width: 767px) {
+  header {
+    padding-top: 24px;
+  }
+
   .object__desktop-wr {
     display: none;
   }
@@ -2248,6 +2279,13 @@ footer {
 
   .header__btn {
     font-size: 14px;
+  }
+
+  .initial img {
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
   }
 
   .initial__p-upper {
@@ -2358,6 +2396,12 @@ footer {
   .despription__item-curcle {
     width: 36px;
     height: 36px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about__form {
+    max-width: 250px;
   }
 }
 

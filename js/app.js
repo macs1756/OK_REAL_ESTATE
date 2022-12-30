@@ -110,27 +110,55 @@ if(SELECT.length>0){
   SELECT.forEach(someSelect=>{
     someSelect.addEventListener('click', ()=>{
       someSelect.nextElementSibling.classList.toggle('active');
-    })
-  })
+      
+    });
+  });
 }
 
 
 window.addEventListener('click', function(e){
     if(e.target.classList.contains('about__option-item')){
-      let currentSelectWrapper = e.target.parentElement.previousElementSibling;
-      let currentSelect = currentSelectWrapper.querySelector('p')
+      let currentSelectWrapper = e.target.closest('.about__section');
+      let currentSelect = currentSelectWrapper.querySelector('p');
       currentSelect.innerHTML = e.target.innerText;
       currentSelect.classList.add('valid');
-      e.target.parentElement.classList.remove('active'); 
+      currentSelectWrapper.querySelector('.about__option-wrapper').classList.remove('active'); 
+      currentSelect.style.color = 'rgba(0, 0, 0)';
     }
-})
+});
 
 const POST_SELECT = document.querySelector('#btnSelect');
 
 POST_SELECT.addEventListener('click', ()=>{
-    console.log('++');
-    ///POST SELECT DATE
+  
+  let allCurrentOption = document.querySelectorAll('.current-option');
+
+
+  if(allCurrentOption.length > 0){
+    allCurrentOption.forEach(currentOption=>{
+
+      if(!currentOption.classList.contains('valid')){
+        currentOption.style.color = '#B91F28';
+      }else{
+        currentOption.style.color = 'rgba(0, 0, 0)';
+      }
+    });
+  }
+
+  let allSelectValid = allCurrentOption[0].classList.contains('valid') && allCurrentOption[1].classList.contains('valid') && allCurrentOption[2].classList.contains('valid')
+
+
+ if(allSelectValid){
+  alert('sucses');
+  //--------------------FOR BACKEND---------------------//
+  let dateForBackend = `Місто: ${allCurrentOption[0].innerText}, Тип: ${allCurrentOption[1].innerText}, Вартість: ${allCurrentOption[2].innerText}`;
+  console.log(dateForBackend);
+ }
+
+
 });
+
+
 
 
 const tabs = document.querySelectorAll('[data-tab-target]')
@@ -175,3 +203,5 @@ const productSwiper = new Swiper(".product__slider", {
   }
   
 });
+
+

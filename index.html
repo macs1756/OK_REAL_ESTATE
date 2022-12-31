@@ -5,10 +5,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css?_v=20221230195417" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221230195417" />
-	<link rel="stylesheet" href="css/style.css?_v=20221230195417">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css?_v=20221231141922" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221231141922" />
+	<link rel="stylesheet" href="css/style.css?_v=20221231141922">
 </head>
 
 <body>
@@ -17,14 +17,16 @@
 
 
 
-		<div class="header__prop"></div>
-<header>	
+		<header>
 	<div class="content header">
-		
+
 		<nav class="header__nav d-flex a-i-center j-c-space">
 
 			<div class="header__burger"><span></span></div>
-			<picture><source srcset="img/header__logo.webp" type="image/webp"><img src="img/header__logo.png" alt="header-logo"></picture>
+			<a href="index.html">
+				<picture><source srcset="img/header__logo.webp" type="image/webp"><img class="header__logo" src="img/header__logo.png" alt="header-logo"></picture>
+			</a>
+
 
 			<ul class="a-i-start">
 				<li><a href="index.html">ГОЛОВНА</a></li>
@@ -33,31 +35,19 @@
 				<li><a href="index.html">ВІДГУКИ</a></li>
 				<li><a href="index.html">НАШІ КЛІЄНТИ</a></li>
 				<li><a href="index.html">КОНТАКТИ</a></li>
-				
 			</ul>
-
 			<button class="header__btn btn consultation">Замовити консультацію</button>
-		
-
-		</nav>	
-
+		</nav>
 		<ul class="burger__body">
 			<li><a href="index.html">ГОЛОВНА</a></li>
-				<li><a href="index.html">О КОМПАНІЇ</a></li>
-				<li><a href="index.html">НАША КОМАНДА</a></li>
-				<li><a href="index.html">ВІДГУКИ</a></li>
-				<li><a href="index.html">НАШІ КЛІЄНТИ</a></li>
-				<li><a href="index.html">КОНТАКТИ</a></li>
+			<li><a href="index.html">О КОМПАНІЇ</a></li>
+			<li><a href="index.html">НАША КОМАНДА</a></li>
+			<li><a href="index.html">ВІДГУКИ</a></li>
+			<li><a href="index.html">НАШІ КЛІЄНТИ</a></li>
+			<li><a href="index.html">КОНТАКТИ</a></li>
 		</ul>
-	
-		</div>
-	
-
-			
+	</div>
 </header>
-
-
-
 
 
 		<main>
@@ -69,8 +59,7 @@
 		<h1>Агенція нерухомості OK Real Estate</h1>
 		<p class="initial__p-upper w100">БАЖАЄТЕ БЕЗКОШТОВНУ КОНСУЛЬТАЦІЮ?</p>
 		<p class="initial__p-lower">Заповніть форму та отримайте безкоштовну консультацію стосовно Вашого питання</p>
-	</div>
-	
+	</div>	
 </section>
 	
 			<section>
@@ -90,7 +79,7 @@
 				</div>
 
 				<div data-simplebar class="about__option-wrapper opt1">
-					<div class="about__option-item">Дніп</div>
+					<div class="about__option-item">Дніпрозаборськ</div>
 					<div class="about__option-item">item2</div>
 					<div class="about__option-item">item3</div>
 					<div class="about__option-item">item4</div>
@@ -115,7 +104,7 @@
 				</div>
 				
 				<div data-simplebar class="about__option-wrapper opt2">
-					<div class="about__option-item">Двохкымнатна rdfhnbhf</div>
+					<div class="about__option-item">Двохкымнатна</div>
 					<div class="about__option-item">item2</div>
 					<div class="about__option-item">item3</div>
 					<div class="about__option-item">item4</div>
@@ -172,25 +161,34 @@
 					уклали сотні угод, які отримали безліч позитивних відгуків.</p>
 			</div>
 			<div class="about__net-slider d-flex a-i-start">
+
 				<div class="slider__main">
 
 					<div class="about-swiper">
 						<div class="swiper-wrapper">
 							<!-- Slides -->
 							<div class="swiper-slide">
-								<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt="slide"></picture>
+								<picture><source srcset="img/command-1.webp" type="image/webp"><img class="adaptive-img" src="img/command-1.jpg" alt="slide"></picture>
 							</div>
 
 							<div class="swiper-slide">
-								<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt="slide"></picture>
+								<picture><source srcset="img/command__compani.webp" type="image/webp"><img class="adaptive-img" src="img/command__compani.jpg" alt="slide"></picture>
 							</div>
 
 							<div class="swiper-slide">
-								<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt="slide"></picture>
+								<picture><source srcset="img/command-3.webp" type="image/webp"><img class="adaptive-img" src="img/command-3.jpeg" alt="slide"></picture>
 							</div>
 
 							
+							<div class="swiper-pagination"></div>
 
+							<div class="about-prev">
+								<img src="img/arrow-swiper-about.svg" alt="arrow">
+							</div>
+
+							<div class="about-next">
+								<img src="img/arrow-swiper-about.svg" alt="arrow">
+							</div>
 						</div>
 
 
@@ -205,15 +203,15 @@
 						<div class="swiper-wrapper">
 							<!-- Slides -->
 							<div class="swiper-slide">
-								<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt="slide"></picture>
+								<picture><source srcset="img/command-1.webp" type="image/webp"><img class="adaptive-img" src="img/command-1.jpg" alt="slide"></picture>
 							</div>
 
 							<div class="swiper-slide">
-								<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt="slide"></picture>
+								<picture><source srcset="img/command__compani.webp" type="image/webp"><img class="adaptive-img" src="img/command__compani.jpg" alt="slide"></picture>
 							</div>
 
 							<div class="swiper-slide">
-								<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt="slide"></picture>
+								<picture><source srcset="img/command-3.webp" type="image/webp"><img class="adaptive-img" src="img/command-3.jpeg" alt="slide"></picture>
 							</div>
 
 							
@@ -278,7 +276,7 @@
 				</div>
 			</div>
 				
-				<picture><source srcset="img/rent.webp" type="image/webp"><img class='despription__bg' src="img/rent.png" alt="bg"></picture>
+				<picture><source srcset="img/selling.webp" type="image/webp"><img class='despription__bg' src="img/selling.png" alt="bg"></picture>
 			</div>
 
 
@@ -314,7 +312,7 @@
 					
 				</div>
 				
-				<picture><source srcset="img/selling.webp" type="image/webp"><img class='despription__bg' src="img/selling.png" alt="bg"></picture>
+				<picture><source srcset="img/rent.webp" type="image/webp"><img class='despription__bg' src="img/rent.png" alt="bg"></picture>
 			</div>
 		</div>
 	</div>
@@ -923,7 +921,7 @@
 					</ul>
 			  </div>
 			  <div class="command__body-img">
-				  <picture><source srcset="img/rent.webp" type="image/webp"><img src="img/rent.png" alt="member command"></picture>
+				  <picture><source srcset="img/command__compani.webp" type="image/webp"><img class="adaptive-img" src="img/command__compani.jpg" alt="member command"></picture>
 			  </div>
 			</div>
 			<div class="command__body-second"></div>
@@ -933,7 +931,6 @@
 		<div class="command__gradient"></div>
 	</div>
 </section>
-
 			<section class="client">
 		<h2>Наші клиєнти</h2>
 
@@ -951,13 +948,13 @@
 				<picture><source srcset="img/client-3.webp" type="image/webp"><img src="img/client-3.png" alt=""></picture>
 			</div>
 			<div class="client__body-item">
-				<picture><source srcset="img/command__compani.webp" type="image/webp"><img src="img/command__compani.jpg" alt=""></picture>
-			</div>
-			<div class="client__body-item">
 				<picture><source srcset="img/client-4.webp" type="image/webp"><img src="img/client-4.png" alt=""></picture>
 			</div>
 			<div class="client__body-item">
 				<picture><source srcset="img/client-5.webp" type="image/webp"><img src="img/client-5.png" alt=""></picture>
+			</div>
+			<div class="client__body-item">
+				<picture><source srcset="img/client-6.webp" type="image/webp"><img src="img/client-6.png" alt=""></picture>
 			</div>
 		</div>
 		</div>
@@ -1065,11 +1062,12 @@
 
 		</div>
 	</div>
-	<script src="js/header.js?_v=20221230195417"></script>
-	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js?_v=20221230195417"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221230195417"></script>
-	<script src="js/dynamicAdapt.js?_v=20221230195417"></script>
-	<script src="js/app.js?_v=20221230195417"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221231141922"></script>
+	<script src="js/swiper.js?_v=20221231141922"></script>
+	<script src="js/burger.js?_v=20221231141922"></script>
+	<script src="js/consultation.js?_v=20221231141922"></script>
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js?_v=20221231141922"></script>
+	<script src="js/dynamicAdapt.js?_v=20221231141922"></script>
+	<script src="js/index.js?_v=20221231141922"></script>
 </body>
-
 </html>

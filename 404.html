@@ -5,53 +5,50 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css?_v=20221231141922" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221231141922" />
+	<title>Home</title>
 	<link rel="stylesheet" href="css/style.css?_v=20221231141922">
 </head>
 
 <body>
 
-	<div class="wrapper single">
+	<div class="wrapper error-page">
 
-
-		<header>	
+		<header>
 			<div class="content header">
-				
-				<nav class="header__nav d-flex a-i-center j-c-space">
 		
-					<div class="header__burger"><span></span></div>
-<a href="index.html">
-	<picture><source srcset="img/header__single.webp" type="image/webp"><img src="img/header__single.png" alt="header-logo"></picture>
-</a>
+				<nav class="header__nav d-flex a-i-center j-c-space">
+					<a href="index.html">
+						<img class="header__logo-mobile" src="img/arrow-swiper-about.svg" alt="arrow">
+						<picture><source srcset="img/header__logo.webp" type="image/webp"><img class="header__logo-desktop" src="img/header__logo.png" alt="header-logo"></picture>
+					</a>
+		
+		
 					<ul class="a-i-start">
 						<li><a href="index.html">ГОЛОВНА</a></li>
 						<li><a href="index.html">О КОМПАНІЇ</a></li>
 						<li><a href="index.html">НАША КОМАНДА</a></li>
 						<li><a href="index.html">ВІДГУКИ</a></li>
 						<li><a href="index.html">НАШІ КЛІЄНТИ</a></li>
-						<li><a href="index.html">КОНТАКТИ</a></li>				
+						<li><a href="index.html">КОНТАКТИ</a></li>
 					</ul>
 					<button class="header__btn btn consultation">Замовити консультацію</button>
-				</nav>	
-				<ul class="burger__body">
-					<li><a href="index.html">ГОЛОВНА</a></li>
-						<li><a href="index.html">О КОМПАНІЇ</a></li>
-						<li><a href="index.html">НАША КОМАНДА</a></li>
-						<li><a href="index.html">ВІДГУКИ</a></li>
-						<li><a href="index.html">НАШІ КЛІЄНТИ</a></li>
-						<li><a href="index.html">КОНТАКТИ</a></li>
-				</ul>	
-				</div>			
+				</nav>
+			</div>
 		</header>
-		
-
-		
-
 
 		<main>
 			
+<section class="initial">
+	<picture><source srcset="img/home-initial-bg.webp" type="image/webp"><img class="adaptive-img" src="img/home-initial-bg.png" alt="bg"></picture>
+	<div class="initial__gradient"></div>
+	<div class="initial__body d-flex flex-column content">
+		<h1>Сторінку не знайдено</h1>
+		<p>404</p>
+		<a class="error__btn btn " href="index.html">Повернутись на головну</a>
+	</div>	
+</section>
+	
+		
 		</main>
 
 		
@@ -127,9 +124,7 @@
 
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221231141922"></script>
-	<script src="js/swiper.js?_v=20221231141922"></script>
-	<script src="js/header.js?_v=20221231141922"></script>
+	<script src="js/consultation.js?_v=20221231141922"></script>
 	
 </body>
 </html>

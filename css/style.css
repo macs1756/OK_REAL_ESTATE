@@ -1832,7 +1832,7 @@ footer {
   display: block;
 }
 
-.error-page p {
+.error-page .error__p {
   font-weight: 300;
   font-size: 128px;
   line-height: 120%;
@@ -2211,7 +2211,7 @@ footer {
     padding-bottom: calc(100px + 60 * ((100vw - 320px) / 1920));
   }
 
-  .error-page p {
+  .error-page .error__p {
     font-size: calc(40px + 88 * ((100vw - 320px) / 1920));
   }
 }

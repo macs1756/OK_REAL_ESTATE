@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Catalog</title>
-	<link rel="stylesheet" href="css/style.css?_v=20230101183406">
+	<link rel="stylesheet" href="css/style.css?_v=20230102141322">
 </head>
 
 <body>
@@ -53,16 +53,147 @@
 					<a href="index.html">Головна/</a><span>комерційна нерухомість</span>
 				</div>
 				<div class="catalog__main">
+
 					<aside class="catalog__filter">
-						<div class="main-category">
-							<div class="main__category-label">
-								<span>Вибрати категорію</span>
+
+
+						<div class="filter__row-first">	
+							<div class="main-category">
+
+							<div class="main__category-label d-flex a-i-start j-c-start cu-po">
+								<h5>Вибрати категорію</h5>
 								<img src="img/filter-arrow.svg" alt="arrow">
 							</div>
-							<div class="main__category-content"></div>
+
+							<div class="main__category-content">
+
+								<div class="filter__first">
+									<div class="filter__children d-flex a-i-center j-c-start cu-po">
+										<span>Комерційна нерухомість</span>
+										<img src="img/filter-arrow.svg" alt="arrow">
+									</div>
+									<div class="filter__children-body">
+										<button class="filter__children-item">Продаж</button>
+										<button class="filter__children-item">Оренда</button>
+									</div>
+								</div>
+
+								<div class="filter__second">
+									<div class="filter__children d-flex a-i-center j-c-start cu-po">
+										<span>Житлова нерухомість</span>
+										<img src="img/filter-arrow.svg" alt="arrow">
+									</div>
+
+									<div class="filter__children-body">
+										<button class="filter__children-item">Продаж</button>
+										<button class="filter__children-item">Оренда</button>
+									</div>
+
+								</div>
+								
+							</div>
+
+
+							</div>
+
+							<div class="location-category">
+								<h5 class="location__category-select">Розташування</h5>
+								<div class="location__category-option">Луцьк</div>
+								<div class="location__category-option">Київ</div>
+								<div class="location__category-option">Красилів</div>
+								<div class="location__category-option">Боратин</div>
+							</div>
 
 						</div>
+
+
+						<div class="filter__row-second">
+
+							<div class="filter__size">
+								<h5>Вибрати площу</h5>
+								
+								
+								 <div class="slider">
+									<div class="progress"></div>
+								 </div>
+
+								 <div class="range-input">
+									<input type="range" class="range-min" min="0" max="1000" value="120" step="10">
+									<input type="range" class="range-max" min="0" max="1000" value="1000" step="10">
+								 </div>
+
+
+								 
+								 <div class="price-input">
+
+									<div class="field field-min">
+								
+									  <input type="number" class="input-min" value="120">
+									  <span class="min-size">120м2</span>
+									</div>
+	
+	
+									<div class="field field-max">
+									  <input type="number" class="input-max" value="1000">
+									  <span class="max-size">1000м2</span>
+									</div>
+								 </div>
+
+
+							  </div>
+
+
+
+
+							  <div class="filter__price">
+
+								<h5>Фільтрувати за ціною</h5>
+
+
+
+								<div class="slider2">
+									<div class="progress2"></div>
+								 </div>
+
+								 <div class="range-input2">
+									<input type="range" class="range-min" min="0" max="1900000" value="0" step="100">
+									<input type="range" class="range-max" min="0" max="1900000" value="1900000" step="100">
+								 </div>
+					 
+								 <div class="price-input2">
+
+									<div class="field field-min price-label">
+										Ціна:
+									</div>
+	
+									<div class="field field-max">
+										<input type="number" class="input-min" value="0">
+									  <input type="number" class="input-max" value="1900000">
+									  <div>
+										<span class="min-price">0$</span>
+										<span>-</span>
+										<span class="max-price">1900000$</span>
+									  </div>
+									  
+									</div>
+
+
+								 </div>
+
+
+							 </div>
+
+<!-- second -->
+							</div>	
+							<div class="filter__button-wr">
+								<button class="filter__button w100">Пошук</button>		
+							</div>
+							
 					</aside>
+
+
+
+
 
 					<div class="catalog__net-wr">
 						<div class="catalog__current-filters w100 d-flex j-c-start">
@@ -301,9 +432,9 @@
 		</div>
 	</div>
 
-	<script src="filters.js?_v=20230101183406"></script>
-	<script src="js/scroll.js?_v=20230101183406"></script>
-	<script src="js/consultation.js?_v=20230101183406"></script>
+	<script src="js/filters.js?_v=20230102141322"></script>
+	<script src="js/scroll.js?_v=20230102141322"></script>
+	<script src="js/consultation.js?_v=20230102141322"></script>
 </body>
 
 </html>

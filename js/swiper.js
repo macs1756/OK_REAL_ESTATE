@@ -1,6 +1,7 @@
 const aboutSwiper = new Swiper(".about-swiper", {
 	pagination: {
 	  el: ".swiper-pagination",
+	  clickable: true,
 	},
  
 	navigation: {
@@ -22,6 +23,7 @@ const aboutSwiper = new Swiper(".about-swiper", {
 	  },
 	}
  });
+
 const productSwiper = new Swiper(".product__slider", {
 	spaceBetween: 35, 
 	 navigation: {
@@ -41,5 +43,5 @@ const productSwiper = new Swiper(".product__slider", {
 			slidesPerView: 4
 		 }
 	}
-	
+
  });

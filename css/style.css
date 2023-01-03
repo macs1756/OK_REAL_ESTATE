@@ -904,8 +904,6 @@ header {
 }
 
 .card__img-main {
-  width: 100%;
-  height: 100%;
   -o-object-position: center center;
      object-position: center center;
 }
@@ -1149,8 +1147,6 @@ header {
 }
 
 .command {
-  border-radius: 8px;
-  overflow: hidden;
   margin: 0 auto;
   max-width: 1690px;
   padding-left: 120px;
@@ -1161,14 +1157,17 @@ header {
   margin-bottom: 65px;
 }
 
+.command,
 .command__wr {
   border-radius: 8px;
   overflow: hidden;
+}
+
+.command__wr {
   position: relative;
   width: 100%;
 }
 
-.command__bg,
 .command__gradient {
   position: absolute;
   top: 0;
@@ -1189,8 +1188,6 @@ header {
 
 .command__bg {
   z-index: 2;
-  -o-object-fit: cover;
-     object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
 }
@@ -1702,17 +1699,6 @@ header {
   text-transform: capitalize;
 }
 
-.about__rent .despription__bg,
-.about__selling .despription__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .about__selling-body {
   position: relative;
   z-index: 2;
@@ -2188,6 +2174,10 @@ footer {
 .location__category-option {
   font-size: 14px;
   line-height: 170%;
+}
+
+.location__category-option {
+  display: block;
 }
 
 .filter__first {
@@ -2712,7 +2702,7 @@ footer {
   }
 
   .command__body-img {
-    height: calc(230px + 390 * ((100vw - 320px) / 1920));
+    height: calc(200px + 420 * ((100vw - 320px) / 1920));
   }
 
   .single main {
@@ -2808,7 +2798,7 @@ footer {
   }
 
   .about__option-item {
-    font-size: calc(10px + 6 * ((100vw - 320px) / 1920));
+    font-size: calc(13px + 3 * ((100vw - 320px) / 1920));
   }
 
   .about__despription {

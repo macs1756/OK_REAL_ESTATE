@@ -1,7 +1,10 @@
-
-
 const MAIN_FILTER_AKARDEON = document.querySelector('.main__category-label');
 const CHILDREN_FILTER_AKARDEON = document.querySelectorAll(".filter__children");
+const MIN_SIZE_FILTER = document.querySelector('.min-size');
+const MAX_SIZE_FILTER = document.querySelector('.max-size');
+const MIN_PRICE_FILTER = document.querySelector('.min-price');
+const MAX_PRICE_FILTER = document.querySelector('.max-price');
+const AKARDEON_VALUE = document.querySelectorAll('.filter__children-item');
 
 if(MAIN_FILTER_AKARDEON){
 	MAIN_FILTER_AKARDEON.addEventListener('click', ()=>{
@@ -17,17 +20,7 @@ if(CHILDREN_FILTER_AKARDEON.length > 0){
 	});
 }
 
-
-
-
-
-
 //rangeSIZE
-const MIN_SIZE_FILTER = document.querySelector('.min-size');
-const MAX_SIZE_FILTER = document.querySelector('.max-size');
-
-
-
 const rangeInput = document.querySelectorAll(".range-input input"),
   priceInput = document.querySelectorAll(".price-input input"),
   range = document.querySelector(".slider .progress");
@@ -35,9 +28,6 @@ let priceGap = 10;
 
 priceInput.forEach((input) => {
   input.addEventListener("input", (e) => {
-
-
-	
 
     let minPrice = parseInt(priceInput[0].value),
       maxPrice = parseInt(priceInput[1].value);
@@ -78,17 +68,7 @@ rangeInput.forEach((input) => {
   });
 });
 
-
-
-
 //rangePrice
-
-
-const MIN_PRICE_FILTER = document.querySelector('.min-price');
-const MAX_PRICE_FILTER = document.querySelector('.max-price');
-
-
-
 const rangeInput2 = document.querySelectorAll(".range-input2 input"),
   priceInput2 = document.querySelectorAll(".price-input2 input"),
   range2 = document.querySelector(".slider2 .progress2");
@@ -96,10 +76,6 @@ let priceGap2 = 100;
 
 priceInput2.forEach((input) => {
   input.addEventListener("input", (e) => {
-
-
-	
-
     let minPrice = parseInt(priceInput2[0].value),
       maxPrice = parseInt(priceInput2[1].value);
 
@@ -139,3 +115,10 @@ rangeInput2.forEach((input) => {
   });
 });
 
+if(AKARDEON_VALUE.length > 0){
+  AKARDEON_VALUE.forEach(value=>{
+    value.addEventListener('click', ()=>{
+      value.parentElement.classList.remove('active');
+    });
+  });
+}

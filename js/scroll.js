@@ -1,5 +1,3 @@
-
-
 let HEADER = document.querySelector('header');
 
 window.addEventListener('scroll', ()=>{

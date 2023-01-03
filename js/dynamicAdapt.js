@@ -154,6 +154,4 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 const da = new DynamicAdapt("max");
 da.init();
 
-
-
-//для мобаил фирст мыняэм макс и мин мыстями
+//для мобаил фирст min змінюємо max і навпаки
